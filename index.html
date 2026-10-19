@@ -21,8 +21,8 @@
       <p class="lead">KidGuard는 아이가 쓰는 Windows 노트북에 설치하는 <strong>무료</strong> 프로그램입니다. 하루 사용 시간을 정하고, 게임·사이트를 조절하고, 멀리 있어도 텔레그램으로 시간을 더 주거나 잠글 수 있습니다.</p>
       <div class="download">
         <a class="btn-download" href="https://github.com/kidguard-ap/kidguard-ap.github.io/releases/latest/download/KidGuard-Setup.exe">⬇ Windows용 무료 다운로드</a>
-        <p class="dl-meta">버전 <span class="nowrap">0.8.1</span> · 파일 크기 <span class="nowrap">78.0 MB</span> · Windows 10, 11</p>
-        <p class="dl-sha">SHA-256 <code>9A1F388EFBB7FB4CC7973EAA1CB91E2A682C00890C40C39D310FA64B2B04B936</code></p>
+        <p class="dl-meta">버전 <span class="nowrap">0.10.0</span> · 파일 크기 <span class="nowrap">78.1 MB</span> · Windows 10, 11</p>
+        <p class="dl-sha">SHA-256 <code>DA5FEC9FF1F70E300C303D6D11FC9F96A2527B144E78186444E8C0AE784FFC5F</code></p>
         <details class="dl-what">
           <summary>SHA-256 이 뭔가요?</summary>
           <p>받은 파일이 중간에 바뀌지 않았는지 확인하는 지문 같은 값입니다. 꼭 확인하지 않아도 설치할 수 있습니다. 확인하고 싶으면 다운로드 폴더에서 PowerShell 을 열고 <code>Get-FileHash .\KidGuard-Setup.exe</code> 를 입력해 위 글자와 같은지 보세요.</p>
@@ -68,7 +68,7 @@
     </article>
     <article class="card">
       <h3><span class="ico" aria-hidden="true">📱</span> 텔레그램으로 원격 설정</h3>
-      <p>밖에서도 휴대폰 텔레그램으로 시간 더 주기, 지금 잠그기, 잠깐 풀어 주기를 할 수 있습니다. <code>/settings</code> 를 보내면 시간·앱·사이트를 화면에서 바꿀 수 있습니다.</p>
+      <p>밖에서도 휴대폰 텔레그램으로 시간 더 주기, 지금 잠그기, 잠깐 풀어 주기를 할 수 있습니다. <code>/menu</code> 를 보내면 🏠 메뉴에서 거의 모든 기능을 고를 수 있고, <code>/settings</code> 를 보내면 시간·앱·사이트·보호·화면 기록을 화면에서 바꿀 수 있습니다.</p>
     </article>
     <article class="card">
       <h3><span class="ico" aria-hidden="true">📊</span> 매일·매주 리포트</h3>
@@ -89,7 +89,7 @@
     <li><b>아이 계정이 관리자면 지킬 수 없습니다.</b> 아이는 꼭 '표준' 계정으로 써야 합니다. 더 단단히 하려면 BIOS 비밀번호와 USB 부팅 막기를 권합니다.</li>
     <li><b>처음 보는 프로그램 확인은 실행 직후 닫는 방식</b>이라, 아주 짧게 켜졌다 꺼지는 프로그램은 닫기 전에 끝날 수 있습니다 (기록과 알림은 남습니다).</li>
     <li><b>텔레그램 설정 화면은 버튼을 받은 순간의 값</b>을 보여 줍니다. 오래 열어 두었으면 [🔄 최신 값 받기]를 눌러 주세요.</li>
-    <li><b>새 버전이 나와도 저절로 알리지 않습니다</b> (노트북이 인터넷에서 버전을 확인하지 않게 했습니다). 업데이트는 이 페이지에서 새로 받아 설치합니다.</li>
+    <li><b>새 버전이 나와도 저절로 알리지 않습니다</b> (노트북이 인터넷에서 버전을 확인하지 않게 했습니다). 업데이트는 텔레그램에서 <code>/update</code> 를 보내 설치하거나, 이 페이지에서 새로 받아 설치합니다.</li>
     <li><b>Windows 경고가 나옵니다.</b> 비싼 코드 서명 인증서가 없어서 생기는 경고로, 아래 설치 2단계처럼 넘어가면 됩니다.</li>
     <li><b>아직 0.x 버전입니다.</b> 여러 가정에서 써 보며 다듬는 중이라, 이상한 점이 있으면 알려 주세요.</li>
   </ul>
@@ -122,7 +122,7 @@
             <p class="mb-title">다운로드</p>
             <div class="mb-file">
               <span class="mb-icon" aria-hidden="true"></span>
-              <span><b>KidGuard-Setup.exe</b><small>78.0 MB · 완료</small></span>
+              <span><b>KidGuard-Setup.exe</b><small>78.1 MB · 완료</small></span>
             </div>
             <p class="mb-open"><span class="pointer">파일 열기</span></p>
           </div>
@@ -214,6 +214,7 @@
     </div>
     <ul class="priv-list">
       <li>사용 시간, 앱, 사이트 기록은 <b>아이 노트북 안</b>과 <b>가족이 직접 만든 텔레그램 봇 대화</b>에만 있습니다. 따로 회원 가입이나 KidGuard 서버가 없습니다. (텔레그램 메시지는 다른 텔레그램 대화처럼 텔레그램 서비스를 거쳐 오갑니다.)</li>
+      <li>부모님이 요청한 <b>사용 기록 CSV 파일과 진단 파일</b>도 요청한 부모님의 봇 대화로만 보냅니다. 진단 파일에서는 봇 토큰·비밀번호·승인 코드 열쇠를 가립니다.</li>
       <li><b>이 사이트와 텔레그램 설정 화면은 아무것도 받지 않습니다.</b> 설정 화면은 글자와 버튼만 있는 파일이고, 값은 텔레그램을 통해서만 노트북과 오갑니다.</li>
       <li>노트북은 이 사이트나 GitHub 에 연결하지 않습니다. 그래서 새 버전 알림도 없습니다.</li>
       <li>사이트는 이름(예: youtube.com)만 기록하고, 주소·검색어·대화 내용·화면은 기록하지 않습니다.</li>
@@ -265,7 +266,7 @@
 
 <footer class="foot">
   <div class="wrap">
-    <p>KidGuard 0.8.1 · 무료 Windows 프로그램 · kidguard-ap</p>
+    <p>KidGuard 0.10.0 · 무료 Windows 프로그램 · kidguard-ap</p>
     <p>이 페이지는 쿠키와 분석 도구를 쓰지 않습니다.</p>
   </div>
 </footer>
